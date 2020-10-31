@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            
+        }
+        @media (max-width: 300px){
+            #box1{
+                display: block;
+            }
+        }
+        @media (max-width: 500px) and (min-width: 300px){
+            #box2{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"> iphone </div>
+    <div class="box" id="box2"> tablet</div>
+    <div class="box" id="box3"> computer </div>
+    <div class="box" id="box4"> widescreen </div>
+</body>
+</html>
